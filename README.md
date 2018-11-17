@@ -53,3 +53,10 @@ docker run --rm --interactive --tty -v ${PWD}:/app \
 -w /app --entrypoint=php prooph/composer:7.1 \
  bin/app.php
 ```
+ou bien faire:
+```
+docker run --rm --interactive --tty -v ${PWD}:/app \
+-u $(id -u):$(id -g) \
+-e HOME=/app -e COMPOSER_HOME=/app/composer  \
+-w /app --entrypoint=php prooph/composer:7.1  bin/app.php
+```
