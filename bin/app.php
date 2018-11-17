@@ -6,7 +6,7 @@ use Aws\SecretsManager\SecretsManagerClient;
 use Aws\Exception\AwsException;
 
 //HOME is required for AWS store credentials to work.
-putenv('HOME=/app');
+//putenv('HOME=/app');
 
 /**
  * In this sample we only handle the specific exceptions for the 'GetSecretValue' API.
@@ -21,10 +21,12 @@ putenv('HOME=/app');
 $client = new SecretsManagerClient([
     'profile' => 'default',
     'version' => '2017-10-17',
-    'region' => 'us-east-1',
+    //'region' => 'us-east-1',
+    'region' => 'us-west-2',
 ]);
 
-$secret_name = 'moodle/secrets/stds/test001';
+//$secret_name = 'moodle/secrets/stds/test001';
+$secret_name = 'moodle/dev/db/test001';
 
 try {
     $result = $client->getSecretValue([

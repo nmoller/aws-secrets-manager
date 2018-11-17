@@ -15,6 +15,8 @@ $ export AWS_SESSION_TOKEN=AQoDYXdzEJr...<remainder of security token>
    # AWS_SESSION_TOKEN is supported by multiple AWS SDKs other than PHP.
 ```
 
+
+
 Lancer composer:
 ```
 docker run --rm --interactive --tty -v ${PWD}:/app \
