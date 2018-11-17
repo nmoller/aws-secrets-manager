@@ -1,0 +1,10 @@
+{
+    "name": "nmoller/secretmanager001",
+    "description": "Testing secrets from aws sdk",
+    "type": "project",
+    "require": {
+        "aws/aws-sdk-php": "^3.0@dev"
+    },
+    "license": "WTFK",
+    "minimum-stability": "dev"
+}

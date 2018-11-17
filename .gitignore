@@ -1,0 +1,5 @@
+rootkey.csv
+.aws/
+.idea/
+composer/
+vendor/
